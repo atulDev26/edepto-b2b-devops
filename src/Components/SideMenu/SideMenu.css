@@ -1,0 +1,23 @@
+.nav {
+  position: relative; 
+}
+
+.nav a{
+  background-color: #007bff; 
+  color: #fff;
+  padding: 4px 12px; 
+  border-radius: 4px;
+  text-decoration: none; 
+  display: block; 
+  position: relative;
+}
+
+.nav a:before { 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px; 
+  height: 100%; 
+  background-color: red; 
+}

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #020202;
+  --light-black-color: #1E293B;
+  --primary-red: #d94230;
+  --primary-blue: #024cc7;
+  --primary-yellow: #f2ae00;
+  --table-buttons-color: #2959ab;
+  --primary-green: #96c237;
+  --primary-light-white: #f5f0f6;
+  --primary-dark-white: #ece5f0;
+  --background-color: #f8f9fb;
+  --input-gray: #717171;
+  --footer-color: #94a3b8;
+  --menu-text-color: #475569;
+  --table-header-bg: #f9f9f9;
+  --search-box-background: #f1f5f9;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+/* custom scroll bar */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* scrollbar itself */
+*::-webkit-scrollbar-thumb {
+  background-color: #ece5f0;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+/* set button(top and bottom of the scrollbar) */
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+/*Bootstrap modal styling*/
+
+.modal-content {
+  border-radius: 17px !important;
+}
+
+.modal-body {
+  padding: 0 !important;
+}
+
+
+.bg-color-card {
+  background-color: var(--background-color);
+  transition: all 200ms ease-in-out;
+}
+
+.gray-text {
+  color: var(--menu-text-color);
+}
+
+.black-text {
+  color: var(--light-black-color);
+}
+
+.bg-blue {
+  color: #F9F9F9;
+  background: var(--primary-blue);
+}
+
+.check {
+  color: var(--primary-blue);
+}
+
+.bg-color-card:hover {
+  background: linear-gradient(180.35deg, #024CC7 0.3%, #0F56DC 47.5%, #2971F9 95.35%, #2F77FF 113.08%);
+
+}
+
+.bg-color-card:hover .gray-text {
+  color: white !important;
+}
+
+.bg-color-card:hover .black-text {
+  color: white !important;
+}
+
+.bg-color-card:hover .bg-blue {
+  background: #F9F9F9;
+  color: var(--primary-blue);
+}
+
+.bg-color-card:hover .check {
+  color: white !important;
+}
+
+/* price & plan */
+.price-text-discounted {
+  font-size: clamp(58px, 5vw, 60px);
+  line-height: clamp(56px, 4vw, 58px);
+}
+
+.price-text-original {
+  font-size: clamp(28px, 5vw, 30px);
+  line-height: clamp(26px, 4vw, 28px);
+  color: var(--input-gray);
+}
+
+.bg-color-card:hover .price-text-original {
+  color: #cccccc;
+}
+
+.price-cut {
+  position: relative;
+}
+
+.price-cut:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid var(--primary-red);
+  /* border-color: inherit; */
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.feature-check {
+  color: var(--primary-green);
+}
+
+.feature-wrong {
+  color: var(--primary-red);
+}
+
+
+/* dropDown */
+@media (max-width: 767px) {
+  .dropdown-menu {
+    right: auto;
+    left: 0;
+  }
+}
+
+
+
+/* ckEditor warning remove */
+.cke_notifications_area {
+  display: none;
+}
+
+/* .cke_notification_message {
+  display: none;
+  border: none;
+}
+
+.cke_notification .cke_notification_warning {
+  display: none;
+} */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

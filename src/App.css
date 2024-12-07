@@ -1,0 +1,282 @@
+.calendar-custom {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--gray-switch-2);
+  padding: 15px;
+  color: var(--black) !important;
+}
+
+.calendar-custom .react-calendar__navigation__label__labelText {
+  color: #000000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.react-calendar {
+  height: 100%;
+  width: 100% !important;
+  border: none !important;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: var(--gray-switch-2) !important;
+}
+
+.calendar-progress-bar {
+  height: 50px;
+
+}
+
+.react-calendar__tile abbr {
+  display: none !important;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+  pointer-events: none !important;
+  text-decoration: none !important;
+  color: #C9C9CB;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.react-calendar__tile--now {
+  background-color: var(--primary-mid-color) !important;
+  border-radius: 10px !important;
+}
+
+.react-calendar__tile--active {
+  background-color: #E6E6E6 !important;
+  border-radius: 10px !important;
+}
+
+.react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+
+.react-calendar__navigation button {
+  font-size: 35px;
+  color: var(--black) !important;
+}
+
+.react-calendar__navigation button:first-child {
+  border: 1px solid #E9EEF4 !important;
+  border-radius: 100%;
+}
+
+.react-calendar__navigation button:last-child {
+  border: 1px solid #E9EEF4 !important;
+  border-radius: 100%;
+}
+
+/* tab style */
+.nav-tabs {
+  --bs-nav-tabs-border-color: none !important;
+  gap: 4px !important;
+
+}
+
+.nav-link {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 600;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  color: #475569 !important;
+  border: 2px solid var(--background-color) !important;
+  border-bottom: none !important;
+  border-color: var(--background-color) !important;
+}
+
+.nav-tabs .nav-link.active {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  color: var(--primary-blue) !important;
+  border: 2px solid var(--primary-blue) !important;
+  border-bottom: none !important;
+  border-color: var(--primary-blue) !important;
+}
+
+.ReactTags__tagInput {
+  width: 100%;
+}
+
+.tagInputField {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 100% !important;
+  background-color: transparent;
+  padding: 8px 20px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.singleTag {
+  display: flex;
+  align-items: center;
+  line-height: normal;
+  background-color: transparent;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  margin: 4px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: black;
+  font-size: 12px;
+  border: 1px solid #ddd;
+}
+
+.removeIcon {
+  background-color: transparent;
+  color: #e03131;
+  border: none;
+  margin-left: 8px;
+  line-height: normal;
+  font-size: 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  font-weight: 600;
+  margin-top: -2px;
+}
+
+.selectedArea {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* editor preview */
+
+.editor-preview {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-all;
+}
+
+.cke_bottom,
+.cke_top {
+  border-radius: 10px !important;
+  background-color: var(--white-color) !important;
+}
+
+input[type='radio']:after {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: transparent;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid #908c8c;
+  cursor: pointer;
+}
+
+input[type='radio']:checked:after {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #5ff10a;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid #908c8c;
+  cursor: pointer;
+}
+
+.sc-beySPh,
+.huezRP,
+.rdt_Table {
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
+
+/* for custom dropdown */
+.custom-dropdown {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-color: #000000;
+  width: 8px;
+  height: 8px;
+  transition: all 200ms ease-in-out;
+}
+
+.dropdown-close {
+  transform: rotate(-45deg);
+}
+
+.dropdown-open {
+  transform: rotate(135deg);
+  border-color: var(--primary-blue);
+}
+
+
+/* total-study-chart */
+.total-study-hour {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0px !important;
+}
+
+.study-hour-bar-chart .compare-hour {
+  color: var(--second-text-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.study-hour-bar-chart .span-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.negative {
+  color: #BC1500;
+}
+
+.positive {
+  color: #15BC00;
+}
+
+.study-hour-bar-chart .final-total-hour {
+  color: #000;
+  text-align: right;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* badge */
+.badge {
+  line-height: unset;
+}
+
+.sectionName {
+  background: linear-gradient(to right, #ECF3FF, #FFFFFF);
+}
+
+.answer {
+  background: linear-gradient(to right, #FFFFFF, #ECF3FF);
+}

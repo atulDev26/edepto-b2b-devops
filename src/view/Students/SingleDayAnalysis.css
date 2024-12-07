@@ -1,0 +1,73 @@
+.single-analysis-date {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 10px;
+    line-height: normal;
+}
+
+.single-day-progress {
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.single-day-progress .week-days {
+    display: flex;
+}
+
+.single-day-progress .week-days .calendar-progress-bar {
+    margin: 0px 10px;
+}
+
+.single-progress-bar {
+    height: 250px;
+    position: relative;
+}
+
+.single-progress-bar .single-day-progress-bar {
+    height: 250px;
+}
+
+.single-progress-bar .single-day-progress-bar .CircularProgressbar-text {
+    white-space: pre-line !important;
+}
+
+.single-progress-bar .centered-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.single-progress-bar .centered-text p:first-child {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.single-progress-bar .centered-text p:last-child {
+    color: var(--secondary-color-four);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.single-progress-bar .centered-text .out-off-time {
+    color: var(--second-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

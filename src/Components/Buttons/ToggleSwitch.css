@@ -1,0 +1,271 @@
+/* .toggler {
+    width: 72px;
+  }
+  
+  .toggler input {
+    display: none;
+  }
+  
+  .toggler label {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 27px;
+    border: 1px solid #d6d6d6;
+    border-radius: 36px;
+    background: #e4e8e8;
+    cursor: pointer;
+  }
+  
+  .toggler label::after {
+    display: block;
+    border-radius: 100%;
+    background-color: #d7062a;
+    content: '';
+    animation-name: toggler-size;
+    animation-duration: 0.15s;
+    animation-timing-function: ease-out;
+    animation-direction: forwards;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+  }
+  
+  .toggler label::after, .toggler label .toggler-on, .toggler label .toggler-off {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 22px;
+    height: 22px;
+    transform: translateY(-50%) translateX(-50%);
+    transition: left 0.15s ease-in-out, background-color 0.2s ease-out, width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s ease-in-out;
+  }
+  
+  .toggler input:checked + label::after, .toggler input:checked + label .toggler-on, .toggler input:checked + label .toggler-off {
+    left: 75%;
+  }
+  
+  .toggler input:checked + label::after {
+    background-color: #50ac5d;
+    animation-name: toggler-size2;
+  }
+  
+  .toggler .toggler-on, .toggler .toggler-off {
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  .toggler input:checked + label .toggler-off, .toggler input:not(:checked) + label .toggler-on {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  
+  .toggler .path {
+    fill: none;
+    stroke: #fefefe;
+    stroke-width: 7px;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+  }
+  
+  @keyframes toggler-size {
+    0%, 100% {
+      width: 26px;
+      height: 26px;
+    }
+  
+    50% {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  @keyframes toggler-size2 {
+    0%, 100% {
+      width: 26px;
+      height: 26px;
+    }
+  
+    50% {
+      width: 20px;
+      height: 20px;
+    }
+  }
+    */
+
+    /* The switch - the box around the slider */
+.switch {
+  font-size: 12px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border: 1px solid #adb5bd;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.27em;
+  bottom: 0.25em;
+  background-color: #adb5bd;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #007bff;
+}
+
+input:checked+.slider:before {
+  transform: translateX(1.4em);
+  background-color: #fff;
+}
+
+
+/* all Accesstoggle css */
+.cl-toggle-switch {
+  position: relative;
+}
+
+.cl-switch {
+  position: relative;
+  display: inline-block;
+}
+
+/* Input */
+.cl-switch>input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  z-index: -1;
+  position: absolute;
+  right: 6px;
+  top: -8px;
+  display: block;
+  margin: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(0, 0, 0, 0.38);
+  outline: none;
+  opacity: 0;
+  transform: scale(1);
+  pointer-events: none;
+  transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
+}
+
+/* Track */
+.cl-switch>span::before {
+  content: "";
+  float: right;
+  display: inline-block;
+  margin: 5px 0 5px 10px;
+  border-radius: 7px;
+  width: 36px;
+  height: 14px;
+  background-color:#E2E8F0;
+  vertical-align: top;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+/* Thumb */
+.cl-switch>span::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 16px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #94A3B8;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+/* Checked */
+.cl-switch>input:checked {
+  right: -10px;
+  background-color: #9FFCD5;
+}
+
+.cl-switch>input:checked+span::before {
+  background-color: #9FFCD5;
+}
+
+.cl-switch>input:checked+span::after {
+  background-color: #00B66A;
+  transform: translateX(16px);
+}
+
+/* Hover, Focus */
+.cl-switch:hover>input {
+  opacity: 0.04;
+}
+
+.cl-switch>input:focus {
+  opacity: 0.12;
+}
+
+.cl-switch:hover>input:focus {
+  opacity: 0.16;
+}
+
+/* Active */
+.cl-switch>input:active {
+  opacity: 1;
+  transform: scale(0);
+  transition: transform 0s, opacity 0s;
+}
+
+.cl-switch>input:active+span::before {
+  background-color: #8f8f8f;
+}
+
+.cl-switch>input:checked:active+span::before {
+  background-color: #85b8b7;
+}
+
+/* Disabled */
+.cl-switch>input:disabled {
+  opacity: 0;
+}
+
+.cl-switch>input:disabled+span::before {
+  background-color: #ddd;
+}
+
+.cl-switch>input:checked:disabled+span::before {
+  background-color: #bfdbda;
+}
+
+.cl-switch>input:checked:disabled+span::after {
+  background-color: #9FFCD5;
+}

@@ -1,0 +1,24 @@
+.bg-primary-blue {
+    background-color: #1D4ED8;
+    /* Adjust the color to match your design */
+}
+
+.text-white-color {
+    color: #FFFFFF;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}

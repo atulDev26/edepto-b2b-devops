@@ -1,0 +1,22 @@
+.form {
+  border-radius: 0px 50px 60px 60px;
+}
+.top {
+  border-radius: 60px 30px 0px 0px;
+}
+.top::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  right: -1rem;
+  bottom: 0;
+  border-radius: 100vw;
+  background-color: white;
+  border-radius: 0 0 0 100vw;
+  box-shadow: -5px 5px 0 5px var(--primary-blue);
+}
+
+.card-header{
+ font-size:  clamp(25px, 5vw, 40px);
+} 

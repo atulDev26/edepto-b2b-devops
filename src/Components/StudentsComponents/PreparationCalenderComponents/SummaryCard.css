@@ -1,0 +1,78 @@
+.summary-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 30px;
+    height: inherit;
+  
+}
+
+.summary-card .info-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #000;
+    border: none;
+    outline: none;
+}
+
+.summary-card .info-icon:hover{
+    background-color: transparent;
+}
+
+.popover{
+    background-color: transparent !important;
+}
+
+.popover-header{
+    background-color: var(--primary-mid-color);
+    font-size: 14px !important;
+    font-weight: 500;
+    margin-bottom: 0px !important;
+    outline: none;
+}
+
+/* .popover-arrow::after,.popover-arrow::before{
+    border-left-color: var(--primary-mid-color) !important;
+} */
+
+.popover-body{
+    background-color: #ffffff !important;
+    color: var(--black);
+    padding: 10px !important;
+}
+
+.summary-card .icon {
+    margin-bottom: 15px;
+}
+
+.summary-card .title {
+    color: var(--black);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px !important;
+    white-space: pre-line;
+}
+
+.summary-card .rank {
+    color: var(--black);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.summary-card .out-of-rank {
+    color: #A4AAB1;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
